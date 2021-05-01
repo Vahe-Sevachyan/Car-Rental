@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="3CardComponent.css">
+  <title>VIP Rentals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&amp;family=Lexend+Deca&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat&family=Mulish:wght@500&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="navContainer">
+      <div ><img class="logo" src="svg/carlogo.png" alt=""></div>
+        <h2 class="vipRentals">VIP Rentals</h2>
+        <button class="hamburger" id="hamburger">
+          <span><img src="svg/hamburgerMenu.svg" alt=""></span>
+        </button>
+        <div>
+          <ul class="navBar" id="navBar">
+            <li><a href="" class="home">Home</a></li>
+            <li><a href="" class="rent">Rent</a></li>
+            <li><a href="" class="buy">Buy</a></li>
+            <li><a href="" class="locations">Locations</a></li>
+            <li><a href="" class="about">About Us</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="searchLocation">
+      <label for="locationSearch" class="searchBarHeader">Search For Location's Near You</label><br>
+      <input type="text" name="" id="locationSearch">
+    </div>
+
+      <div class="dateSection">
+          <form action="/form/submit" method="post" class="formSections">
+            <label for="date" class="formLabels">Please Schedule Date:</label>
+            <input type="date" name="date" id="date"value="2021-01-04" min="2017-01-01" max="2030-01-01"  class="formInputs">
+          </form>
+          <form action="/action_page.php" class="formSections">
+            <label for="appt" class="formLabels">Select a time:</label>
+            <input type="time" id="appt" name="appt" class="formInputs">
+          </form>
+          <form action="/form/submit" method="post" class="formSections">
+            <label for="email" class="formLabels">Enter Email:</label> 
+            <input type="email" name="email" id="email" placeholder="Email" multiple class="formInputs"><br>
+            <button class="submitFormButton"> Submit Request</button>
+          </form>
+    </div>
+    <h2 class="popularChoices">Popular Choices</h2>
+<div class="threeCardSection">
+    <div class = "cardContainer">
+          <div class="sedans">
+            <img class = "svg" src="svg/icon-sedans.svg" alt="">
+          <h2 class="headers">Sedans</h2>
+        <p class="paragraphs">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+          or on your next road trip.</p>
+          <div class="threeCardLinkSedan"><a href="" class="learnMoreLinkSedan">Learn More</a></div>
+          </div>
+          <div class="SUVs">
+            <img class = "svg" src="svg/icon-suvs.svg" alt="">
+            <h2 class="headers">SUVs</h2> 
+        <p class="paragraphs"> Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+          and off-road adventures.
+        </p>
+          <div class="threeCardLinkSuv"><a href="" class="learnMoreLinkSuv">Learn More</a></div>
+          </div>
+
+          <div class="luxury">
+            <img class = "svg" src="svg/icon-luxury.svg" alt="">
+          <h2 class="headers">Luxury</h2> 
+        <p class="paragraphs"> Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+          rental and arrive in style.</p>
+          <div class="threeCardLinkLuxury"><a href="" class="learnMoreLinkLuxury">Learn More</a></div>
+          </div>
+      </div>
+  </div>
+
+   <div class="gridContainer">
+      <div class="gridItemOne"> <h2 class="carHeader">Convertible</h2><img src="cars-images/2018-mustang-convertible.png.webp" alt=""><a href=""><h3 class="moreInfoBtn">More Info</h3></a></div>
+      <div class="gridItemOne"> <h2 class="carHeader">Truck</h2><img src="cars-images/2019-ford-pick-up.png.webp" alt=""><a href=""><h3 class="moreInfoBtn">More Info</h3></a></div>
+      <div class="gridItemOne"> <h2 class="carHeader">SUV</h2><img src="cars-images/2019-ford-edge-suv.png.webp" alt=""> <a href=""><h3 class="moreInfoBtn">More Info</h3></a></div>
+      <div class="gridItemOne"> <h2 class="carHeader">Van</h2><img src="cars-images/2015-dodge-minivan.png.webp" alt=""><a href=""><h3 class="moreInfoBtn">More Info</h3></a></div>
+      <div class="gridItemOne"> <h2 class="carHeader">Sedan</h2><img src="cars-images/Cadilac-sedan.png.webp" alt=""><a href=""><h3 class="moreInfoBtn">More Info</h3></a></div>
+      <div class="gridItemOne"> <h2 class="carHeader">Sport</h2><img src="cars-images/2019-dodge-challenger.png.webp" alt=""><a href=""><h3 class="moreInfoBtn">More Info</h3></a></div>
+   </div>
+
+    <div class="footerLinks">
+          <div class="popularSearches">
+            <h3>Popular Searches</h3>
+            <ul>
+              <li> <a href="" class="footerLinks">Long-Term Car Rental</a></li>
+              <li> <a href="" class="footerLinks">One-Way Car Rental</a></li>
+              <li><a  href="" class="footerLinks">Free Upgrade Deals</a></li>
+              <li><a  href="" class="footerLinks">Rental Car FAQ</a></li>
+            </ul>
+          </div>
+          <div class="popularRentalCars">
+            <h3>Popular Rental Cars</h3>
+            <ul>
+              <li><a href="" class="footerLinks">Luxury Car Rentals</a></li>
+              <li><a href="" class="footerLinks">Economy Car Rental</a></li>
+              <li><a href="" class="footerLinks">Pickup Truck Rental</a></li>
+              <li><a href="" class="footerLinks">SUV Rental</a></li>
+              <li><a href="" class="footerLinks">Van Rental</a></li>
+            </ul>
+          </div>
+          <div class="popularDestinations">
+            <h3>Popular US Destinations</h3>
+            <ul>
+              <li><a href="" class="footerLinks">Trip Ideas</a></li>
+              <li><a href="" class="footerLinks">Car Rental Las Vegas</a></li>
+              <li><a href="" class="footerLinks">Car Rental NYC</a></li>
+              <li><a href="" class="footerLinks">Car Rental Chicago</a></li>
+              <li><a href="" class="footerLinks">Car Rental Los Angeles</a></li>
+            </ul>
+          </div>
+          <div class="VIP Partners">
+            <h3>VIP Partners</h3>
+            <ul>
+              <li><a href="" class="footerLinks">Affiliates</a></li>
+              <li><a href="" class="footerLinks">Travel Agents</a></li>
+              <li><a href="" class="footerLinks">AARP Members</a></li>
+              <li><a href="" class="footerLinks">Miles & Points Programs</a></li>
+              <li><a href="" class="footerLinks">Military & Veterans</a></li>
+            </ul>
+          </div>
+          <div class="vipSupport">
+            <h3>VIP Support</h3>
+            <ul>
+              <li><a href="" class="footerLinks">Contact US</a> </li>
+              <li><a href="" class="footerLinks">Roadside Assistance</a></li>
+              <li><a href="" class="footerLinks">Rental Car Fuel Plans</a></li>
+              <li><a href="" class="footerLinks">Site Map</a></li>
+              <li><a href="" class="footerLinks">Accessibility</a></li>
+            </ul>
+          </div>
+          <div class="Company Info">
+            <h3>Company Info</h3>
+            <ul>
+              <li><a href="" class="footerLinks">About US</a></li>
+              <li><a href="" class="footerLinks">Careers</a></li>
+              <li><a href="" class="footerLinks">Lost & Found</a></li>
+              <li><a href="" class="footerLinks">Terms Of Use</a></li>
+              <li><a href="" class="footerLinks">Privacy Notice</a></li>
+            </ul>
+          </div>
+      </div>
+  <div class="svgContainer">
+        <li><a href=""><img src="svg/icon-facebook.svg" class="footerSvg" alt=""></a></li> 
+        <li><a href=""><img src="svg/icon-pinterest.svg"  class="footerSvg" alt=""></a></li> 
+        <li><a href=""><img src="svg/icon-instagram.svg"  class="footerSvg" alt=""></a></li> 
+        <li><a href=""><img src="svg/icon-twitter.svg"  class="footerSvg" alt=""></a></li>  
+  </div>
+  <h4 class="copyRight">Copyright © 2021 all rights reserved</h4>
+  <script src="carRental.js"></script>
+</body>
+</html>
