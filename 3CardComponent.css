@@ -48,6 +48,11 @@ div .navBar{
     justify-content: space-between;
     width: 350px;
 }
+.vipLogo{
+    margin: auto;
+    margin-left:260px;
+    max-width: 500px;
+}
 .hamburger{
     background-color: transparent;
     border:0;
@@ -198,35 +203,38 @@ div .navBar{
     background-color: rgb(248, 248, 248);
 }
 /* ********Hover Card Links******** */
- .threeCardLinkSedan:hover{
-   padding: 0px;
-} 
-.learnMoreLinkSedan:hover{
+.threeCardLinkSedan:hover{
     background-color: hsl(31, 77%, 52%);
     color: white;
     border: solid white 2px;
     border-radius: 50px;
     padding: 10px 20px;
+    cursor: pointer;
 }
-.threeCardLinkSuv:hover{
-    padding: 0px;
-}
-.learnMoreLinkSuv:hover{
-    background-color: hsl(184, 100%, 22%);
+ .threeCardLinkSuv:hover{
+     background-color: hsl(184, 100%, 22%);
+     color: white;
+     border: solid white 2px;
+     border-radius: 50px;
+     padding: 10px 20px;
+     cursor: pointer;
+ }
+ .threeCardLinkLuxury:hover{
+     background-color: hsl(179, 100%, 13%);
+     color: white;
+     border: solid white 2px;
+     border-radius: 50px;
+     padding: 10px 20px;
+     cursor: pointer;
+ }
+ .threeCardLinkSedan:hover .learnMoreLinkSedan{
     color: white;
-    border: solid white 2px;
-    border-radius: 50px;
-    padding: 10px 20px;
 }
-.threeCardLinkLuxury:hover{
-    padding: 0px;
-}
-.learnMoreLinkLuxury:hover{
-    background-color: hsl(179, 100%, 13%);
+.threeCardLinkSuv:hover .learnMoreLinkSuv{
     color: white;
-    border: solid white 2px;
-    border-radius: 50px;
-    padding: 10px 20px;
+}
+.threeCardLinkLuxury:hover .learnMoreLinkLuxury{
+    color: white;
 }
 /* ********Hover Card Links******** */
 a{
@@ -302,6 +310,7 @@ h3{
     margin-bottom: 5px;
 }
 .footerLinks{
+    max-width: 1800px;
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
@@ -333,7 +342,20 @@ h3{
 }
 /* ************FOOTER SECTION************* */
 /* ************NAV SECTION************* */
+@media only screen and (max-width: 1225px){
+    .vipLogo{
+    margin: auto;
+    margin-left:210px;
+    max-width: 300px;
+}
+
+}
 @media only screen and (max-width: 1050px){
+    .vipLogo{
+        margin: auto;
+        margin-left:50px;
+        max-width: 300px;
+    }
     .vipRentals{
         padding-left: 0px;
         font-size: 30px;
@@ -367,7 +389,25 @@ h3{
 }
 /* ************NAV SECTION************* */
 /* ************ 3 CARD COLUMN************* */
+@media only screen and (max-width: 900px){
+    .vipLogo{
+        margin: auto;
+        margin-left:50px;
+        max-width: 250px;
+}
+/* ************ 3 CARD COLUMN************* */
 @media only screen and (max-width: 600px){
+    .logo{
+        right:10px;
+        height: 50px;
+        width: 70px;
+        border-radius: 40px;
+    }
+    .vipLogo{
+        margin: auto;
+        margin-left:-10px;
+        max-width: 150px;
+    }
     .sedans{
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0px;
@@ -376,10 +416,6 @@ h3{
         border-top-right-radius: 0px;
         border-bottom-left-radius: 10px;
     }
-}
-/* ************ 3 CARD COLUMN************* */
-@media only screen and (max-width: 600px){
-
     #locationSearch{
         margin-bottom: 20px;
     }
